@@ -1,0 +1,33 @@
+{% set name = "weasel" %}
+{% set version = "0.1" %}
+{% set sha256 = "f25305d41dfd215f8b44ea349d19991480649f4e995f68e20727243dc284d116" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  path: https://raw.githubusercontent.com/michauhl/test_scripts/main/local_bioconda_recipe_test/marvin.py
+  sha256: "{{ sha256 }}"
+
+build:
+  number: 0
+  noarch: python
+  script: $PYTHON -m pip install . --ignore-installed --no-deps -vv
+
+requirements:
+  host:
+    - python
+    - pip
+  run:
+    - python
+
+test:
+  commands:
+    - weasel.py -h
+
+about:
+  home: https://github.com/michauhl/weasel
+  license: MIT
+  license_file: LICENSE
+  summary: Cornholio
