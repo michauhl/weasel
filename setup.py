@@ -12,6 +12,6 @@ setup(
     author_email='uhlm@informatik.uni-freiburg.de',
     url='https://github.com/michauhl/weasel',
     license='MIT',
-    scripts=['weasel.py'],
+    scripts=['bin/weasel.py'],
     zip_safe=False,
 )
