@@ -5,7 +5,7 @@ from setuptools import setup
 
 setup(
     name='weasel',
-    version='0.3',
+    version='0.4',
     description='Enter the weasel',
     long_description=open('README.md').read(),
     author='Michael Uhl',
