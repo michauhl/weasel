@@ -1,6 +1,6 @@
 {% set name = "weasel" %}
-{% set version = "0.1" %}
-{% set sha256 = "78891f9fa68fc67e7eb0a93df35479b911d6a04a3790e64f8f73c0fda2f8162e" %}
+{% set version = "0.2" %}
+{% set sha256 = "21d596404940ed925dd1e4983a4cf9e8d42dbc5f3382e6180a6236c0a882cbb2" %}
 
 package:
   name: {{ name|lower }}
