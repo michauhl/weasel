@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 setup(
@@ -13,5 +13,6 @@ setup(
     url='https://github.com/michauhl/weasel',
     license='MIT',
     scripts=['bin/weasel.py'],
+    packages=find_packages(exclude=['test']),
     zip_safe=False,
 )
